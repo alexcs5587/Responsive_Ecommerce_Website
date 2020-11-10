@@ -175,6 +175,9 @@ footer {
     left: 160px;
     top: 3px;
   }
+  .index-item img {
+    max-height: 400px;
+  }
 }
 
 .contentWrapper {
@@ -295,7 +298,7 @@ footer {
 
 .index-item img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
