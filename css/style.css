@@ -11,12 +11,26 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-footer {
-  font-size: 0.8rem;
-  display: block;
-  background: #555555;
-  padding: 0.2rem;
-  margin-top: 2rem;
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.shopNowBtn {
+  background: white;
+  padding: 0.8rem;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+}
+
+.shopNowBtn:hover {
+  text-decoration: none;
+  background: black;
+  color: white;
 }
 
 .carousel {
@@ -43,20 +57,6 @@ footer {
   margin: auto;
 }
 
-.carousel-item a, .carousel-item a:visited {
-  background: white;
-  padding: 0.8rem;
-  border-radius: 3px;
-  color: black;
-  font-weight: bold;
-}
-
-.carousel-item a:hover {
-  text-decoration: none;
-  background: black;
-  color: white;
-}
-
 .carousel-image img {
   max-width: 80%;
   max-height: 80%;
@@ -72,36 +72,21 @@ footer {
   padding-left: 5rem;
 }
 
-.carousel-info p {
+.carousel p {
   line-height: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.carousel-item:first-child {
+.carousel:first-child {
   background: #8995a5;
 }
 
-.carousel-item:nth-child(2) {
+.carousel:nth-child(2) {
   background: #303133;
 }
 
-.carousel-item:nth-child(3) {
+.carousel:nth-child(3) {
   background: #0e2f3b;
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 0.8rem;
-  }
-  .carousel-image {
-    display: none;
-  }
-  .carousel-info {
-    padding: 2rem 4.5rem;
-  }
-  .carousel-info p {
-    line-height: 1.5rem;
-  }
 }
 
 .navbarWrapper {
@@ -124,8 +109,12 @@ footer {
   align: right !important;
 }
 
-.nav-link {
+.nav-item a {
   color: black !important;
+}
+
+.nav-item a:hover {
+  color: #383838 !important;
 }
 
 .searchBar {
@@ -142,25 +131,18 @@ footer {
   outline: none;
 }
 
+/* Search icon */
+/* style icon */
 .inner-addon {
   position: relative;
+  /* align icon */
 }
 
-/* style icon */
 .inner-addon .fas {
   position: absolute;
   padding: 10px;
 }
 
-.inner-addon a {
-  color: grey;
-}
-
-.inner-addon a:hover {
-  color: grey;
-}
-
-/* align icon */
 .right-addon .fas {
   right: 10px;
   top: 3px;
@@ -168,16 +150,6 @@ footer {
 
 .right-addon input {
   padding-right: 30px;
-}
-
-@media screen and (max-width: 991px) {
-  .right-addon .fas {
-    left: 160px;
-    top: 3px;
-  }
-  .index-item img {
-    max-height: 400px;
-  }
 }
 
 .contentWrapper {
@@ -196,8 +168,7 @@ footer {
   text-transform: uppercase;
 }
 
-.section-title:before,
-.section-title:after {
+.section-title:before, .section-title:after {
   color: white;
   content: '';
   -webkit-box-flex: 1;
@@ -219,12 +190,9 @@ footer {
   color: black;
 }
 
-.featured-item a:hover {
-  text-decoration: none;
-}
-
 .featured-item-image {
-  height: 350px;
+  height: 25vw;
+  max-height: 350px;
   width: 100%;
 }
 
@@ -240,9 +208,7 @@ footer {
   margin: 0 auto;
 }
 
-.featured-item-title,
-.featured-item-price,
-.featured-item-addToCart {
+.featured-item-title, .featured-item-price, .featured-item-addToCart {
   font-size: 1.5rem;
   text-align: center;
   margin: auto;
@@ -259,10 +225,6 @@ footer {
 .featured-item-addToCart {
   margin-top: 2rem;
   text-decoration: none;
-}
-
-.featured-item-addToCart a:hover {
-  text-decoration: none !important;
 }
 
 .banner {
@@ -325,21 +287,43 @@ footer {
   transition: .3s;
 }
 
-.index-item-overlay .addTocart, .index-item-overlay .addTocart:visited {
-  background: white;
-  padding: 0.8rem;
-  border-radius: 3px;
-  color: black;
-  font-weight: bold;
-}
-
-.index-item-overlay .addTocart:hover {
-  text-decoration: none;
-  background: black;
-  color: white;
-}
-
 .index-item:hover .index-item-overlay {
   bottom: 0;
+}
+
+footer {
+  font-size: 0.8rem;
+  display: block;
+  background: #555555;
+  padding: 0.2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .carousel-info {
+    font-size: .9rem;
+  }
+  .right-addon .fas {
+    left: 160px;
+    top: 3px;
+  }
+  .index-item img {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-image {
+    display: none;
+  }
+  .carousel-info {
+    padding: 2rem 4.5rem;
+  }
+  .carousel-info p {
+    line-height: 1.5rem;
+  }
+  .index-item img {
+    max-height: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
