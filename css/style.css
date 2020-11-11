@@ -57,6 +57,18 @@ a:hover {
   margin: auto;
 }
 
+.carousel-item:first-child {
+  background: #8995a5;
+}
+
+.carousel-item:nth-child(2) {
+  background: #303133;
+}
+
+.carousel-item:nth-child(3) {
+  background: #0e2f3b;
+}
+
 .carousel-image img {
   max-width: 80%;
   max-height: 80%;
@@ -75,18 +87,6 @@ a:hover {
 .carousel p {
   line-height: 2rem;
   margin-bottom: 1.5rem;
-}
-
-.carousel:first-child {
-  background: #8995a5;
-}
-
-.carousel:nth-child(2) {
-  background: #303133;
-}
-
-.carousel:nth-child(3) {
-  background: #0e2f3b;
 }
 
 .navbarWrapper {
